@@ -20,13 +20,13 @@ Original file is located at
 
 !python -m garak --list_probes
 
-OPENAI_API_KEY="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"
+OPENAI_API_KEY="sk-"
 !mkdir /content/reports
 !mkdir /content/extracted
 # !mkdir /content/aggregated
 !mkdir /content/table_images
 
-OPENAI_API_KEY="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"
+OPENAI_API_KEY="sk-"
 
 import json
 import pandas as pd
@@ -140,7 +140,7 @@ def show_results(directory, models, probes, model_filename_mapping, title, print
 
 !pip install guardrails-ai
 
-!guardrails configure --disable-metrics --disable-remote-inferencing --token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhdXRoMHw2OGQzMDM3ZTNjY2ExYzNlNmIzZTRkYjkiLCJhcGlLZXlJZCI6IjVhOGVjNjI4LTQ0N2ItNDFmMC05Njc5LTk2YzZlNmQ1YmUxNyIsInNjb3BlIjoicmVhZDpwYWNrYWdlcyIsInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzU4NjYxNTQ0LCJleHAiOjE3NTkyNjYzNDR9.7-ho4KOG0BrSfr3m0pehOJZwnxR9k2hccOusF6d19DQ
+!guardrails configure --disable-metrics --disable-remote-inferencing --token eyJ
 
 from guardrails import install
 import numpy as np
