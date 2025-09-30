@@ -321,23 +321,6 @@ df_dan = show_results(extracted_dir, models, probes, model_filename_mapping, "Pr
 dfi.export(df_dan, "/content/table_images/attack_dan.png", table_conversion="matplotlib")
 df_dan
 
-#FIXING NAMES
-def create_df_name_garak(data_rows, df_title, rownames, colnames):
-  df = pd.DataFrame(data_rows, index=rownames, columns=colnames)
-
-  return df.style\
-  .format(precision=2, thousands=".", decimal=",")\
-  .background_gradient(axis=None, vmin=0, vmax=100, cmap="RdYlGn_r")\
-  .set_caption(df_title)
-
-temp_df = create_df_name_garak([
-                   [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 100.00, 0.00, 0.00],
-                   [66.67, 100.00, 100.00, 100.00, 100.00, 66.67, 100.00, 66.67, 66.67]
-               ],
-               df_title="Procent pozytywnego działania techniki DAN",
-               rownames=["4o", "babbage"],
-               colnames=["Dev_Mode_RANTI", "Dev_Mode_v2", "Dan_10_0",	"Dan_11_0",	"Dan_6_0",	"Dan_6_2",	"Dan_7_0",	"Dan_8_0",	"Dan_9_0"])
-temp_df
 
 """### Atak impersonacji"""
 
